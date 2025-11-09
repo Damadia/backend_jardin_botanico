@@ -37,12 +37,13 @@ app.use('/api/solicitudes', solicitudesRoutes);
 // Ruta de prueba
 app.get('/', (req, res) => {
     res.json({
+        texto: "Texto agregado desde la rama de Svein",
         mensaje: 'API de Jardín Botánico',
         version: '1.0.0',
         endpoints: {
-            auth: '/api/auth (login, registro)',
-            plantas: '/api/plantas (CRUD de plantas)',
-            solicitudes: '/api/solicitudes (gestión de solicitudes)'
+            auth: '/api/auth',
+            plantas: '/api/plantas',
+            solicitudes: '/api/solicitudes'
         }
     });
 });

@@ -13,10 +13,10 @@ const DB_PATH = process.env.DB_PATH || './database.sqlite';
 // Crear conexión a la base de datos
 const db = new sqlite.Database(DB_PATH, (err) => {
     if (err) {
-        console.error('❌ Error al conectar a la base de datos SQLite:', err.message);
+        console.error('Error al conectar a la base de datos SQLite:', err.message);
         process.exit(1);
     } else {
-        console.log('✅ Conexión exitosa a la base de datos SQLite');
+        console.log('Conexión exitosa a la base de datos SQLite');
     }
 });
 
